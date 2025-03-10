@@ -12,7 +12,7 @@ int main(int argc, char *argv[]) {
     }
 
     const char *log_file = argv[1];
-    FILE *file = fopen(log_file, "r");
+    FILE *file = fopen(log_file, "a");
 
     if (file == NULL) {
         fprintf(stderr, "Failed to open log file: %s\n", log_file);
@@ -28,6 +28,9 @@ int main(int argc, char *argv[]) {
         struct tm *local_time = localtime(&now);
         char timestamp[20];
         strftime(timestamp, sizeof(timestamp), "%Y-%m-%d %H:%M:%S", local_time);
+
+        fprintf(file, "%s %s\n", timestamp, line);
+        fflush(file);
 
         // Print the line
         printf("%s %s\n", timestamp, line);
