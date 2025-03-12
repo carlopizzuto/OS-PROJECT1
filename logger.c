@@ -12,44 +12,35 @@ int main(int argc, char *argv[]) {
     }
 
     // Open the log file
-    const char *file_path = argv[1];
-    FILE *logfile = fopen(file_path, "a");
-
-    if (logfile == NULL) { // File open error handling
-        fprintf(stderr, "Failed to open log file: %s\n", file_path);
+    FILE *logfile = fopen(argv[1], "a");
+    if (!logfile) { // File open error handling
+        perror("Failed to open log file");
         exit(EXIT_FAILURE);
     }
 
     // Read input from stdin
     char line[MAX_LINE_SIZE];
     while (fgets(line, sizeof(line), stdin)) {
-        if (strcmp(line, "QUIT\n") == 0) { // Exit condition
+        if (strncmp(line, "QUIT", 4) == 0) { // Exit condition
             break;
         }
 
-        // Initialize variables
-        char timestamp[20];
-        char action[20], message[MAX_LINE_SIZE];
 
         // Parse the action and message
+        char action[20], message[MAX_LINE_SIZE];
         if (sscanf(line, "%19s %[^\n]", action, message) != 2) {
-            fprintf(stderr, "Invalid log format\n");
+            fprintf(stderr, "Invalid log format: %s\n", line);
             continue;
         }
-
+    
         // Get the current time
         time_t now = time(NULL);
-        struct tm *local_time = localtime(&now);
-
-        // Format the timestamp
-        strftime(timestamp, sizeof(timestamp), "%Y-%m-%d %H:%M", local_time);
+        char timestamp[20];
+        strftime(timestamp, sizeof(timestamp), "%Y-%m-%d %H:%M", localtime(&now));
 
         // Write to the log file
         fprintf(logfile, "%s [%s] %s\n", timestamp, action, message);
         fflush(logfile);
-
-        // Print to stdout
-        printf("%s [%s] %s\n", timestamp, action, message);
     }
 
     fclose(logfile);
