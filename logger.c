@@ -6,47 +6,50 @@
 #define MAX_LINE_SIZE 1024
 
 int main(int argc, char *argv[]) {
-    if (argc != 2) {
+    if (argc != 2) { // Input validation
         fprintf(stderr, "Usage: %s <log_file_path>\n", argv[0]);
         exit(EXIT_FAILURE);
     }
 
+    // Open the log file
     const char *file_path = argv[1];
     FILE *logfile = fopen(file_path, "a");
 
-    if (logfile == NULL) {
+    if (logfile == NULL) { // File open error handling
         fprintf(stderr, "Failed to open log file: %s\n", file_path);
         exit(EXIT_FAILURE);
     }
 
+    // Read input from stdin
     char line[MAX_LINE_SIZE];
     while (fgets(line, sizeof(line), stdin)) {
-        if (strcmp(line, "QUIT\n") == 0) {
+        if (strcmp(line, "QUIT\n") == 0) { // Exit condition
             break;
         }
 
-        // Remove the newline character if present
-        line[strcspn(line, "\n")] = '\0';
-
-        time_t now = time(NULL);
-        struct tm *local_time = localtime(&now);
+        // Initialize variables
         char timestamp[20];
-
         char action[20], message[MAX_LINE_SIZE];
-        
+
         // Parse the action and message
         if (sscanf(line, "%19s %[^\n]", action, message) != 2) {
             fprintf(stderr, "Invalid log format\n");
             continue;
         }
-        
+
+        // Get the current time
+        time_t now = time(NULL);
+        struct tm *local_time = localtime(&now);
+
+        // Format the timestamp
         strftime(timestamp, sizeof(timestamp), "%Y-%m-%d %H:%M", local_time);
 
+        // Write to the log file
         fprintf(logfile, "%s [%s] %s\n", timestamp, action, message);
         fflush(logfile);
 
-        // Print the line
-        printf("%s %s\n", timestamp, line);
+        // Print to stdout
+        printf("%s [%s] %s\n", timestamp, action, message);
     }
 
     fclose(logfile);
