@@ -1,5 +1,2 @@
-2025-03-10 00:34 [TESTING] the log function
-2025-03-12 15:00 [START] this is a test
-2025-03-12 15:01 [START] this is another test
-2025-03-12 15:31 [HELLO] this is the last test
-2025-03-12 15:31 [SIKE] this is it
+2025-03-16 14:37 [START] Driver started
+2025-03-16 14:37 [QUIT] driver ended
