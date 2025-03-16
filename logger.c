@@ -7,7 +7,7 @@
 
 int main(int argc, char *argv[]) {
     if (argc != 2) { // Input validation
-        fprintf(stderr, "Usage: %s <log_file_path>\n", argv[0]);
+        fprintf(stderr, "Usage: ./logger <log_file_path>\n");
         exit(EXIT_FAILURE);
     }
 
@@ -21,10 +21,17 @@ int main(int argc, char *argv[]) {
     // Read input from stdin
     char line[MAX_LINE_SIZE];
     while (fgets(line, sizeof(line), stdin)) {
-        if (strncmp(line, "QUIT", 4) == 0) { // Exit condition
+        // Get the current time
+        time_t now = time(NULL);
+        char timestamp[20];
+        strftime(timestamp, sizeof(timestamp), "%Y-%m-%d %H:%M", localtime(&now));
+
+        // Exit condition
+        if (strncmp(line, "QUIT", 4) == 0) {
+            fprintf(logfile, "%s [%s] %s\n", timestamp, "QUIT", "driver ended");
+            fflush(logfile);
             break;
         }
-
 
         // Parse the action and message
         char action[20], message[MAX_LINE_SIZE];
@@ -32,11 +39,6 @@ int main(int argc, char *argv[]) {
             fprintf(stderr, "Invalid log format: %s\n", line);
             continue;
         }
-    
-        // Get the current time
-        time_t now = time(NULL);
-        char timestamp[20];
-        strftime(timestamp, sizeof(timestamp), "%Y-%m-%d %H:%M", localtime(&now));
 
         // Write to the log file
         fprintf(logfile, "%s [%s] %s\n", timestamp, action, message);
