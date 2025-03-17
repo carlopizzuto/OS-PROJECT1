@@ -1,2 +1,36 @@
-2025-03-16 14:37 [START] Driver started
-2025-03-16 14:37 [QUIT] driver ended
+2025-03-16 21:54 [START] driver started
+2025-03-16 21:54 [CMD] encrypt
+2025-03-16 21:54 [ERROR] Passkey not set
+2025-03-16 21:55 [CMD] password
+2025-03-16 21:55 [PWD] choose from history
+2025-03-16 21:55 [ERROR] no history entries
+2025-03-16 22:00 [START] driver started
+2025-03-16 22:00 [CMD] password
+2025-03-16 22:00 [PWD] choose from history
+2025-03-16 22:00 [ERROR] no history entries
+2025-03-16 22:02 [START] driver started
+2025-03-16 22:02 [CMD] password
+2025-03-16 22:02 [PWD] choose from history
+2025-03-16 22:02 [ERROR] no history entries
+2025-03-16 22:04 [START] driver started
+2025-03-16 22:04 [START] driver started
+2025-03-16 22:04 [CMD] password
+2025-03-16 22:04 [PWD] choose from history
+2025-03-16 22:04 [ERROR] no history entries
+2025-03-16 22:12 [START] driver started
+2025-03-16 22:12 [CMD] password
+2025-03-16 22:12 [PWD] choose from history
+2025-03-16 22:12 [ERROR] no history entries
+2025-03-16 22:13 [START] driver started
+2025-03-16 22:13 [CMD] password
+2025-03-16 22:13 [PWD] choose from history
+2025-03-16 22:13 [ERROR] no history entries
+2025-03-16 22:13 [CMD] password
+2025-03-16 22:13 [PWD] set from input
+2025-03-16 22:13 [CMD] encrypt
+2025-03-16 22:14 [ERROR] Invalid encrypt choice
+2025-03-16 22:14 [CMD] history
+2025-03-16 22:14 [HIST] logging history
+2025-03-16 22:16 [CMD] encrypt
+2025-03-16 22:16 [ERROR] Invalid command: 1
+2025-03-16 22:16 [QUIT] driver ended
