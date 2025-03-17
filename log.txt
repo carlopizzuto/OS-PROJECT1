@@ -1,36 +1,82 @@
-2025-03-16 21:54 [START] driver started
-2025-03-16 21:54 [CMD] encrypt
-2025-03-16 21:54 [ERROR] Passkey not set
-2025-03-16 21:55 [CMD] password
-2025-03-16 21:55 [PWD] choose from history
-2025-03-16 21:55 [ERROR] no history entries
-2025-03-16 22:00 [START] driver started
-2025-03-16 22:00 [CMD] password
-2025-03-16 22:00 [PWD] choose from history
-2025-03-16 22:00 [ERROR] no history entries
-2025-03-16 22:02 [START] driver started
-2025-03-16 22:02 [CMD] password
-2025-03-16 22:02 [PWD] choose from history
-2025-03-16 22:02 [ERROR] no history entries
-2025-03-16 22:04 [START] driver started
-2025-03-16 22:04 [START] driver started
-2025-03-16 22:04 [CMD] password
-2025-03-16 22:04 [PWD] choose from history
-2025-03-16 22:04 [ERROR] no history entries
-2025-03-16 22:12 [START] driver started
-2025-03-16 22:12 [CMD] password
-2025-03-16 22:12 [PWD] choose from history
-2025-03-16 22:12 [ERROR] no history entries
-2025-03-16 22:13 [START] driver started
-2025-03-16 22:13 [CMD] password
-2025-03-16 22:13 [PWD] choose from history
-2025-03-16 22:13 [ERROR] no history entries
-2025-03-16 22:13 [CMD] password
-2025-03-16 22:13 [PWD] set from input
-2025-03-16 22:13 [CMD] encrypt
-2025-03-16 22:14 [ERROR] Invalid encrypt choice
-2025-03-16 22:14 [CMD] history
-2025-03-16 22:14 [HIST] logging history
-2025-03-16 22:16 [CMD] encrypt
-2025-03-16 22:16 [ERROR] Invalid command: 1
-2025-03-16 22:16 [QUIT] driver ended
+2025-03-16 23:51 [DEC]  	choose from history
+2025-03-16 23:51 [HIST]  	logging history
+2025-03-16 23:51 [CMD]  	history
+2025-03-16 23:51 [HIST]  	logging history
+2025-03-16 23:54 [START]  	driver started
+2025-03-16 23:54 [CMD]  	password
+2025-03-16 23:54 [PWD]  	set from input
+2025-03-16 23:55 [PWD]  	set successfully
+2025-03-16 23:55 [CMD]  	encrypt
+2025-03-16 23:55 [ENC]  	set from input
+2025-03-16 23:55 [ENC]  	encrypted successfully: NHXWPY WG HWJB
+2025-03-16 23:55 [CMD]  	decrypt
+2025-03-16 23:55 [DEC]  	choose from history
+2025-03-16 23:55 [HIST]  	logging history
+2025-03-16 23:55 [CMD]  	history
+2025-03-16 23:55 [HIST]  	logging history
+2025-03-16 23:58 [QUIT]  	driver ended
+2025-03-16 23:58 [START]  	driver started
+2025-03-16 23:58 [CMD]  	password
+2025-03-16 23:58 [PWD]  	choose from history
+2025-03-16 23:58 [ERROR]  	no history entries
+2025-03-16 23:58 [CMD]  	encrypt
+2025-03-16 23:58 [ERROR]  	invalid encrypt choice
+2025-03-16 23:58 [CMD]  	encrypt
+2025-03-16 23:58 [ENC]  	set from input
+2025-03-16 23:58 [ERROR]  	Passkey not set
+2025-03-16 23:58 [CMD]  	history
+2025-03-16 23:58 [ERROR]  	no history entries
+2025-03-16 23:58 [CMD]  	password
+2025-03-16 23:58 [PWD]  	set from input
+2025-03-16 23:58 [PWD]  	set successfully
+2025-03-16 23:58 [CMD]  	encrypt
+2025-03-16 23:59 [ENC]  	set from input
+2025-03-16 23:59 [ENC]  	encrypted successfully: WAOAK
+2025-03-16 23:59 [CMD]  	history
+2025-03-16 23:59 [HIST]  	logging history
+2025-03-16 23:59 [CMD]  	decrypt
+2025-03-16 23:59 [DEC]  	choose from history
+2025-03-16 23:59 [HIST]  	logging history
+2025-03-16 23:59 [DEC]  	decrypted successfully: HELLO
+2025-03-16 23:59 [CMD]  	history
+2025-03-16 23:59 [HIST]  	logging history
+2025-03-16 23:59 [QUIT]  	driver ended
+2025-03-17 00:09 [START]  	driver started
+2025-03-17 00:09 [CMD]  	password
+2025-03-17 00:09 [PWD]  	set from input
+2025-03-17 00:09 [PWD]  	set successfully
+2025-03-17 00:09 [CMD]  	encrypt
+2025-03-17 00:09 [ERROR]  	invalid encrypt choice
+2025-03-17 00:09 [CMD]  	encrypt
+2025-03-17 00:09 [ENC]  	choose from history
+2025-03-17 00:09 [ERROR]  	no history entries
+2025-03-17 00:09 [CMD]  	encrypt
+2025-03-17 00:09 [ENC]  	set from input
+2025-03-17 00:09 [ENC]  	encrypted successfully: RIJVS
+2025-03-17 00:10 [CMD]  	decrypt
+2025-03-17 00:10 [DEC]  	choose from history
+2025-03-17 00:10 [HIST]  	logging history
+2025-03-17 00:10 [DEC]  	decrypted successfully: HELLO
+2025-03-17 00:10 [QUIT]  	driver ended
+2025-03-17 00:10 [START]  	driver started
+2025-03-17 00:10 [CMD]  	password
+2025-03-17 00:10 [ERROR]  	invalid password choice
+2025-03-17 00:10 [CMD]  	password
+2025-03-17 00:10 [PWD]  	set from input
+2025-03-17 00:10 [ERROR]  	invalid password
+2025-03-17 00:10 [CMD]  	password
+2025-03-17 00:10 [PWD]  	set from input
+2025-03-17 00:10 [ERROR]  	invalid password
+2025-03-17 00:10 [CMD]  	password
+2025-03-17 00:10 [PWD]  	set from input
+2025-03-17 00:10 [PWD]  	set successfully
+2025-03-17 00:10 [CMD]  	encrypt
+2025-03-17 00:10 [ENC]  	set from input
+2025-03-17 00:10 [ENC]  	encrypted successfully: WAOAK
+2025-03-17 00:10 [CMD]  	decrypt
+2025-03-17 00:10 [DEC]  	choose from history
+2025-03-17 00:10 [HIST]  	logging history
+2025-03-17 00:11 [DEC]  	decrypted successfully: HELLO
+2025-03-17 00:11 [CMD]  	history
+2025-03-17 00:11 [HIST]  	logging history
+2025-03-17 00:11 [QUIT]  	driver ended

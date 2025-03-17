@@ -28,7 +28,7 @@ int main(int argc, char *argv[]) {
 
         // Exit condition
         if (strncmp(line, "QUIT", 4) == 0) {
-            fprintf(logfile, "%s [%s] %s\n", timestamp, "QUIT", "driver ended");
+            fprintf(logfile, "%s [%s]  \t%s\n", timestamp, "QUIT", "driver ended");
             fflush(logfile);
             break;
         }
@@ -41,7 +41,7 @@ int main(int argc, char *argv[]) {
         }
 
         // Write to the log file
-        fprintf(logfile, "%s [%s] %s\n", timestamp, action, message);
+        fprintf(logfile, "%s [%s]  \t%s\n", timestamp, action, message);
         fflush(logfile);
     }
 
