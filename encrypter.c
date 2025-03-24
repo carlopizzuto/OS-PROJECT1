@@ -10,12 +10,14 @@ char passkey[MAX_LINE_SIZE] = "";
 void encrypt_message(const char *message, const char *key, char *encrypted_message) {
     size_t message_length = strlen(message);
     size_t key_length = strlen(key);
+    int space_count = 0;
 
     for (size_t i = 0; i < message_length; i++) {
         if (message[i] == ' ') {
             encrypted_message[i] = ' ';
+            space_count++;
         } else {
-            int key_index = i % key_length;
+            int key_index = (i - space_count) % key_length;
             int shift = (key[key_index] - 'A') % 26;
             int char_index = message[i] - 'A';
             int new_char_index = (char_index + shift) % 26;
@@ -32,12 +34,14 @@ void encrypt_message(const char *message, const char *key, char *encrypted_messa
 void decrypt_message(const char *message, const char *key, char *decrypted_message) {
     size_t message_length = strlen(message);
     size_t key_length = strlen(key);
-    
+    int space_count = 0;
+
     for (size_t i = 0; i < message_length; i++) {
         if (message[i] == ' ') {
             decrypted_message[i] = ' ';
+            space_count++;
         } else {
-            int key_index = i % key_length;
+            int key_index = (i - space_count) % key_length;
             int shift = (key[key_index] - 'A') % 26;
             int char_index = message[i] - 'A';
             int new_char_index = (char_index - shift + 26) % 26;
