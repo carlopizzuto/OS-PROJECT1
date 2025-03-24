@@ -80,3 +80,79 @@
 2025-03-17 00:11 [CMD]  	history
 2025-03-17 00:11 [HIST]  	logging history
 2025-03-17 00:11 [QUIT]  	driver ended
+2025-03-24 17:42 [START]  	driver started
+2025-03-24 17:42 [CMD]  	encrypt
+2025-03-24 17:42 [ENC]  	set from input
+2025-03-24 17:42 [ERROR]  	Passkey not set
+2025-03-24 17:42 [CMD]  	password
+2025-03-24 17:42 [PWD]  	choose from history
+2025-03-24 17:42 [ERROR]  	no history entries
+2025-03-24 17:42 [CMD]  	password
+2025-03-24 17:42 [PWD]  	set from input
+2025-03-24 17:43 [PWD]  	set successfully
+2025-03-24 17:43 [CMD]  	encrypt
+2025-03-24 17:43 [ENC]  	set from input
+2025-03-24 17:43 [ENC]  	encrypted successfully: LXMQX EF QLAZ
+2025-03-24 17:43 [CMD]  	decrypt
+2025-03-24 17:43 [DEC]  	choose from history
+2025-03-24 17:43 [HIST]  	logging history
+2025-03-24 17:43 [DEC]  	decrypted successfully: ATACK AT DAWN
+2025-03-24 17:43 [QUIT]  	driver ended
+2025-03-24 17:50 [START]  	driver started
+2025-03-24 17:50 [CMD]  	password
+2025-03-24 17:50 [PWD]  	set from input
+2025-03-24 17:51 [START]  	driver started
+2025-03-24 17:51 [CMD]  	password
+2025-03-24 17:51 [PWD]  	set from input
+2025-03-24 17:51 [PWD]  	set successfully
+2025-03-24 17:51 [CMD]  	encrypt
+2025-03-24 17:51 [ENC]  	set from input
+2025-03-24 17:51 [ENC]  	encrypted successfully: LXFOPV MH OEIA
+2025-03-24 17:53 [CMD]  	history
+2025-03-24 17:53 [HIST]  	logging history
+2025-03-24 17:55 [QUIT]  	driver ended
+2025-03-24 17:55 [START]  	driver started
+2025-03-24 17:55 [CMD]  	password
+2025-03-24 17:55 [PWD]  	set from input
+2025-03-24 17:55 [PWD]  	set successfully
+2025-03-24 17:55 [CMD]  	encrypt
+2025-03-24 17:55 [ENC]  	set from input
+2025-03-24 17:56 [ENC]  	encrypted successfully: LXFOPV EF 74HR
+2025-03-24 17:56 [QUIT]  	driver ended
+2025-03-24 17:56 [START]  	driver started
+2025-03-24 17:56 [CMD]  	password
+2025-03-24 17:56 [PWD]  	set from input
+2025-03-24 17:56 [PWD]  	set successfully
+2025-03-24 17:56 [CMD]  	encrypt
+2025-03-24 17:56 [ENC]  	set from input
+2025-03-24 17:56 [ENC]  	encrypted successfully: LXFOPV OG POJ@
+2025-03-24 17:58 [QUIT]  	driver ended
+2025-03-24 17:58 [START]  	driver started
+2025-03-24 17:58 [CMD]  	password
+2025-03-24 17:58 [PWD]  	set from input
+2025-03-24 17:58 [PWD]  	set successfully
+2025-03-24 17:58 [CMD]  	encrypt
+2025-03-24 17:58 [ENC]  	set from input
+2025-03-24 17:58 [ENC]  	encrypted successfully: LXFOPV EF RNHQ
+2025-03-24 17:59 [QUIT]  	driver ended
+2025-03-24 17:59 [START]  	driver started
+2025-03-24 17:59 [CMD]  	password
+2025-03-24 17:59 [PWD]  	set from input
+2025-03-24 17:59 [PWD]  	set successfully
+2025-03-24 17:59 [CMD]  	encrypt
+2025-03-24 17:59 [ENC]  	set from input
+2025-03-24 17:59 [ENC]  	encrypted successfully: LXFOPV EF RNHQ
+2025-03-24 17:59 [CMD]  	decrypt
+2025-03-24 17:59 [DEC]  	choose from history
+2025-03-24 17:59 [HIST]  	logging history
+2025-03-24 17:59 [DEC]  	decrypted successfully: ATTACK AT DAWM
+2025-03-24 18:00 [CMD]  	history
+2025-03-24 18:00 [HIST]  	logging history
+2025-03-24 18:00 [CMD]  	encrypt
+2025-03-24 18:00 [ENC]  	set from input
+2025-03-24 18:00 [ENC]  	encrypted successfully: LXFOPV EF RNHR
+2025-03-24 18:00 [CMD]  	decrypt
+2025-03-24 18:00 [DEC]  	choose from history
+2025-03-24 18:00 [HIST]  	logging history
+2025-03-24 18:00 [DEC]  	decrypted successfully: ATTACK AT DAWN
+2025-03-24 18:00 [QUIT]  	driver ended
