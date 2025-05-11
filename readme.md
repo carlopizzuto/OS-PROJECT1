@@ -15,9 +15,7 @@
 1. First, compile all of the programs using the commands:
 
 ```bash
-gcc -o driver driver.c
-gcc -o logger logger.c
-gcc -o encrypter encrypter.c (note that it is encrypter, not encryptor)
+make
 ```
 
 2. Then, run the driver program using the command:
