@@ -12,15 +12,15 @@
 
 ### Usage
 
-First, compile all of the programs using the commands:
+1. First, compile all of the programs using the commands:
 
 ```bash
 gcc -o driver driver.c
 gcc -o logger logger.c
-gcc -o encrypter encrypter.c
+gcc -o encrypter encrypter.c (note that it is encrypter, not encryptor)
 ```
 
-Then, run the driver program using the command:
+2. Then, run the driver program using the command:
 
 ```bash
 ./driver <logfile>
